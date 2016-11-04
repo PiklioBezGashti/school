@@ -16,15 +16,15 @@
 	abbr {
 		text-decoration: none;
 	}
+	td, th{
+		width: 150px;
+	}
 </style>
-
+<!-- colgroup is not supported in HTML5 -->
 <body>
 	<form id="Registration">
 		<table border="2">
-			<colgroup>
-				<col width="150" />
-				<col />
-			</colgroup>
+
 			<thead>
 				<tr>
 					<th>
@@ -102,8 +102,10 @@
 					</th>
 					<td>
 						(
-						<input size="5" type="tel" placeholder="+359"> )
-						<input size="3" type="tel" placeholder="86"> -
+						<input size="5" type="tel" placeholder="+359">
+						 )
+						<input size="3" type="tel" placeholder="86">
+						-
 						<input size="15" type="tel" placeholder="00000000">
 					</td>
 				</tr>
@@ -120,9 +122,11 @@
 						Birth date
 					</th>
 					<td>
-						Month
-						<input size="3" type="text" name="BirthDate" placeholder="01"> Day
-						<input size="3" type="text" name="Day" placeholder="30"> Year 4 didg
+						 Month
+						<input size="3" type="text" name="BirthDate" placeholder="01">
+						 Day
+						<input size="3" type="text" name="Day" placeholder="30">
+						 Year 4 didg
 						<input type="tel" size="10" maxlength="4" name="Year" placeholder="2016">
 					</td>
 				</tr>
