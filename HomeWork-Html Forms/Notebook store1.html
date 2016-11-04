@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+	<title>NoteBook Store</title>
+	<!-- Тестване на нови познания в css -->
+	<style>
+		table,
+		th,
+		td {
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		
+		thead th {
+			border: 2px solid black;
+			font-size: 25px;
+			padding: 5px;
+		}
+		
+		.bordered {
+			border: 2px solid black;
+		}
+		
+		fieldset {
+			border-style: solid;
+			border-color: black;
+			margin: 5px
+		}
+		
+		legend {
+			font-family: Georgia;
+			font-size: 150%;
+		}
+		
+		p {
+			font-family: Georgia;
+			font-size: 110%;
+		}
+		
+		ul {
+			font-family: Georgia;
+			font-size: 110%;
+		}
+		
+		tfoot {
+			font-family: Georgia;
+			font-size: 120%;
+		}
+		
+		label {
+			font-family: Georgia;
+			font-size: 120%;
+		}
+		
+		span {
+			font-family: Georgia;
+			font-size: 120%;
+		}
+	</style>
+</head>
+
+<body>
+	<table class="bordered">
+		<thead>
+			<tr>
+				<th colspan="2" style="font-size: 34px">
+					<a href="#" title="Apple">Apple</a>
+					<a href="#" title="Toshiba">Toshiba</a>
+					<a href="#" title="Lenovo">Lenovo</a>
+					<a href="#" title="Dell">Dell</a>
+					<a href="#" title="Asus">Asus</a>
+					<a href="#" title="Hacer">Hacer</a>
+					<a href="#" title="HP">HP</a>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<table class="bordered">
+						<tbody>
+							<tr>
+								<td>
+									<fieldset>
+										<legend>MacBook</legend>
+										<table>
+											<tbody>
+												<tr>
+													<td>
+														<img src="./images.jpg" width="150" />
+													</td>
+													<td>
+														<p>320 SSD</p>
+														<p>8 GB</p>
+													</td>
+												</tr>
+												<tr>
+													<tfoot align="center">
+														<td><strong>$1300</strong></td>
+														<td>Intel core i5</td>
+													</tfoot>
+												</tr>
+											</tbody>
+										</table>
+									</fieldset>
+								</td>
+								<td>
+									<fieldset>
+										<legend>MacBook</legend>
+										<table>
+											<tr>
+												<td>
+													<img src="./images.jpg" width="150" />
+												</td>
+												<td>
+													<p>320 SSD</p>
+													<p>8 GB</p>
+												</td>
+												<tr>
+													<tfoot align="center">
+														<td><strong>$600</strong></td>
+														<td>Intel core i3</td>
+													</tfoot>
+												</tr>
+											</tr>
+										</table>
+									</fieldset>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<fieldset>
+										<legend>MacBook</legend>
+										<table>
+											<tr>
+												<td>
+													<img src="./images.jpg" width="150" />
+												</td>
+												<td>
+													<p>320 SSD</p>
+													<p>8 GB</p>
+												</td>
+												<tr>
+													<tfoot align="center">
+														<td><strong>$600</strong></td>
+														<td>Intel core i3</td>
+													</tfoot>
+												</tr>
+											</tr>
+										</table>
+									</fieldset>
+								</td>
+								<td>
+									<fieldset>
+										<legend>MacBook</legend>
+										<table>
+											<tr>
+												<td>
+													<img src="./images.jpg" width="150" />
+												</td>
+												<td>
+													<p>320 SSD</p>
+													<p>8 GB</p>
+												</td>
+												<tr>
+													<tfoot align="center">
+														<td><strong>$1300</strong></td>
+														<td>Intel core i5</td>
+													</tfoot>
+												</tr>
+											</tr>
+										</table>
+									</fieldset>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<fieldset>
+										<legend>MacBook</legend>
+										<table>
+											<tr>
+												<td>
+													<img src="./images.jpg" width="150" />
+												</td>
+												<td>
+													<p>252 SSD</p>
+													<p>8 GB</p>
+												</td>
+												<tr>
+													<tfoot align="center">
+														<td><strong>$1000</strong></td>
+														<td>Intel core i3</td>
+													</tfoot>
+												</tr>
+											</tr>
+
+										</table>
+									</fieldset>
+								</td>
+								<td>
+									<fieldset>
+										<legend>MacBook</legend>
+										<table>
+											<tr>
+												<td>
+													<img src="./images.jpg" width="150" />
+												</td>
+												<td>
+													<p>320 SSD</p>
+													<p>8 GB</p>
+												</td>
+												<tr>
+													<tfoot align="center">
+														<td><strong>$600</strong></td>
+														<td>Intel core i3</td>
+													</tfoot>
+												</tr>
+											</tr>
+										</table>
+									</fieldset>
+								</td>
+							</tr>
+							</tbody>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td>
+								<!-- Тест - смяна на скрула на range type и стартова позиция на 50% -->
+								<form method="post" action="#">
+									<label for="minPrice">Min Price:</label><span id="minPriceSliderVal">600</span>$<br />
+									<input style="background: transparent" id="minPrice" type="range" min="600" max="1300" value="950" />
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form method="post" action="#">
+									<label for="maxPrice">Max Price:</label><span id="maxPriceSliderVal">1300</span>$<br />
+									<input style="background: transparent" id="maxPrice" type="range" min="0" max="1000" value="500" />
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form method="post" action="#">
+									<label for="minRam">Min Ram:</label><span id="minRamSliderVal">2</span>GB<br />
+									<input style="background: transparent" id="minRam" type="range" min="2" max="64" value="31" />
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form method="post" action="#">
+									<label for="maxRam">Max Ram:</label><span id="maxRamSliderVal">8</span>GB<br />
+									<input style="background: transparent" id="maxRam" type="range" min="2" max="64" value="31" />
+								</form>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			</tbody>
+	</table>
+</body>
+
+</html>

@@ -1,114 +1,171 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Registration Form</title>
 </head>
 <style>
-	textarea{
-		resize: none
+	textarea {
+		resize: none;
+	}
+	
+	table {
+		border-collapse: collapse;
+	}
+	
+	abbr {
+		text-decoration: none;
 	}
 </style>
+
 <body>
 	<form id="Registration">
-		<table border="2" bgcolor="lightblue">
+		<table border="2">
 			<colgroup>
 				<col width="150" />
 				<col />
 			</colgroup>
-            <tbody>
-			<tr>
-				<th>Last Name</th>
-				<td><input type="text" name="LastName" required="required" autofocus="autofocus"><span style="color: red">*</span></td>
-			</tr>
-			<tr>
-				<th>First Name</th>
-				<td><input type="text" name="FirstName" required="required"><span style="color: red">*</span></td>
-			</tr>
-			<tr>
-				<th>Address</th>
-				<td> <textarea type="text" name="Address" cols="40" rows="5"></textarea></td>
-			</tr>
-			<tr>
-				<th>
-					City
-				</th>
-				<td>
-					<input type="text" name="City" size="32">
-					<strong> State </strong>
-					<input type="text" name="State" size="6">
-				</td>
-			</tr>
-			<tr>
-				<th>
-					zipCode
-				</th>
-				<td>
-					<input type="text" name="ZipCode">
-				</td>
-			</tr>
-			<tr>
-				<th>
-					Country
-				</th>
-				<td>
-					<form action="#" method="post">
-						<select name="Country" style="width: 147px">
+			<thead>
+				<tr>
+					<th>
+						Last Name
+					</th>
+					<td>
+						<input type="text" name="LastName" required="required" autofocus="autofocus">
+						<span style="color: red">
+							<abbr title="All cells with * must be filled up before you send your form !">
+							*
+							</abbr>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						First Name
+					</th>
+					<td>
+						<input type="text" name="FirstName" required="required">
+						<span style="color: red">
+							<abbr title="All cells with * must be filled up before you send your form !">
+							*
+							</abbr>
+						</span>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>
+						Address
+					</th>
+					<td>
+						<textarea type="text" name="Address" cols="40" rows="5" maxlength="150" placeholder="Apartment , Street , City , Country">
+						</textarea>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						City
+					</th>
+					<td>
+						<input type="text" name="City" size="32" value="Kaspichan">
+						<strong> State </strong>
+						<input type="text" name="State" size="6" value="KN">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						zipCode
+					</th>
+					<td>
+						<input type="text" name="ZipCode" value="9325">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Country
+					</th>
+					<td>
+						<form action="#" method="get">
+							<select name="Country" style="width: 147px">
                                 <option value="Bulgaria">Bulgaria</option>
                                 <option value="Turky">Turky</option>
                                 <option value="Greece">Greece</option>
                                 <option value="Poland">Poland</option>
                             </select>
-					</form>
-				</td>
-			</tr>
-			<tr>
-				<th>Phone (country code area code , number)</th>
-				<td>(<input size="5" type="tel" placeholder="+359">)
-					<input size="3" type="tel" placeholder="86"> -
-					<input size="15" type="tel" placeholder="00000000"></td>
-			</tr>
-			<tr>
-				<th>E-mail</th>
-				<td><input size="53" type="email" name="Email" placeholder="example@email.com"></td>
-			</tr>
-			<tr>
-				<th>Birth date</th>
-				<td>Month <input size="3" type="text" name="BirthDate"> Day <input size="3" type="text" name="Day"> Year 4 didg <input size="10"
-						type="text" name="Year">
-				</td>
-			</tr>
-			<tr>
-				<th>Gender</th>
-				<td>
-					<form action="#" method="post">
-						<select name="Gender" style="width: 100px">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Phone (country code area code , number)
+					</th>
+					<td>
+						(
+						<input size="5" type="tel" placeholder="+359"> )
+						<input size="3" type="tel" placeholder="86"> -
+						<input size="15" type="tel" placeholder="00000000">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						E-mail
+					</th>
+					<td>
+						<input size="53" type="email" name="Email" placeholder="example@email.com">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Birth date
+					</th>
+					<td>
+						Month
+						<input size="3" type="text" name="BirthDate" placeholder="01"> Day
+						<input size="3" type="text" name="Day" placeholder="30"> Year 4 didg
+						<input type="tel" size="10" maxlength="4" name="Year" placeholder="2016">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Gender
+					</th>
+					<td>
+						<form action="#" method="get">
+							<select name="Gender" style="width: 100px">
                             <option value="Male">Male</option>
                             <option value="Fmale">Fmale</option>
                             <option value="Other">Other</option>
                         </select>
-					</form>
-				</td>
-			</tr>
-			<tr>
-				<th>Starting Date</th>
-				<td><input type="radio" checked="checked" name="SelectOnlyOne">Spring 2016
-					<input type="radio" name="SelectOnlyOne">Summer 2016
-				</td>
-			</tr>
-			<tr>
-				<th> Comments/Question </th>
-				<td><textarea name="Commecnts" cols="40" rows="10">
-                    </textarea>
-				</td>
-			</tr>
-            </tbody>
-            <tfoot align="center">
-			<tr>
-				<td style="background-color: darkblue" colspan="2">
-					 <input type="submit" value="Register Now"> <input type="reset" name="resetBtn" value="Reset the form">
-				</td>
-			</tr>
-            </tfoot>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Starting Date
+					</th>
+					<td>
+						<input type="radio" checked="checked" name="SelectOnlyOne">Spring 2016
+						<input type="radio" name="SelectOnlyOne">Summer 2016
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Comments/Question
+					</th>
+					<td>
+						<textarea name="Comments" maxlength="150" cols="40" rows="8"></textarea>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot align="center">
+				<tr>
+					<td style="background-color: lightblue" colspan="2">
+						<input type="submit" value="Register Now">
+						<input type="reset" name="resetBtn" value="Reset the form">
+					</td>
+				</tr>
+			</tfoot>
 		</table>
 	</form>
 </body>
