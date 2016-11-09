@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>test exam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        tr#head {
+            background: linear-gradient(#f8f9f9 10%, #DFE1E1 40%);
+            width: 150px;
+            font-size: 32px
+        }
+        
+        tr.color {
+            background: linear-gradient(#f8f9f9 5%, #DFE1E1 50%);
+        }
+        
+        table {
+            border: 1px solid black;
+            padding: 5px;
+            border-spacing: 0px
+        }
+        
+        td,
+        th {
+            font-size: 24px;
+            text-align: center;
+            border-left: 1px solid tomato;
+            border-right: 1px solid tomato;
+            width: 150px;
+            height: 80px;
+        }
+        
+        td.points,
+        th.points {
+            border-right: 1px solid tomato;
+        }
+        
+        th.border {
+            border-top: 1px solid tomato;
+        }
+        
+        th.mix {
+            border-right: 1px solid tomato;
+            border-top: 1px solid tomato;
+        }
+        
+        td.bottom {
+            border-bottom: 1px solid tomato
+        }
+        
+        td.bottommix {
+            border-right: 1px solid tomato;
+            border-bottom: 1px solid tomato
+        }
+        
+        div.main {
+            position: fixed;
+            top: 0px;
+            left: 550px;
+        }
+        article{
+            position: fixed;
+            top: 80px;
+            left: 750px;
+        }
+        div.enc{
+            position: fixed;
+            top: 80px;
+            left: 900px;
+        }
+        div.sub{
+            position: fixed;
+            top: 200px;
+            left: 750px;
+        }
+        div.time{
+            position: fixed;
+            top: 130px;
+            left: 750px;
+        }
+        div.room{
+            position: fixed;
+            top: 130px;
+            left: 900px;
+        }
+        div.city{
+            position: fixed;
+            top: 80px;
+            left: 1050px;    
+        }
+        html,
+        body {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="Main">
+        <thead>
+
+
+            <tr id="head">
+                <th class="border">Name</th>
+                <th class="border">Exam</th>
+                <th class="mix">Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ivan</td>
+                <td>HTML</td>
+                <td class="points">
+                    95<br>
+                    <meter value="95" min="0" max="100"></meter>
+                </td>
+            </tr>
+            <tr class="color">
+                <td>Pesho</td>
+                <td>C#</td>
+                <td class="points">
+                    75<br>
+                    <meter value="75" min="0" max="100"></meter>
+                </td>
+            </tr>
+            <tr>
+                <td>Gosho</td>
+                <td>HTML</td>
+                <td class="points">
+                    90<br>
+                    <meter value="90" min="0" max="100"></meter>
+                </td>
+            </tr>
+            <tr class="color">
+                <td>Boby</td>
+                <td>C#</td>
+                <td class="points">
+                    80<br>
+                    <meter value="80" min="0" max="100"></meter>
+                </td>
+            </tr>
+            <tr>
+                <td class="bottom">Mairo</td>
+                <td class="bottom">C++</td>
+                <td class="bottommix">
+                    85<br>
+                    <meter value="85" min="0" max="100"></meter>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    Time Till Exam Finish: 28 min
+                    <progress value="75" max="100"></progress>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <div class="main">
+        <div>
+            <h1>Registration For Next Exam</h1>
+            <form action="#" method="get">
+                <span>First Name<br>
+        <input type="text" name="firstName" value="">
+        
+        </span><br>
+                <span>
+            Second Name<br>
+        <input type="text" name="secondName" value="">
+        
+        </span>
+                <article class="examp">
+                    Select Exam<br>
+                    <select>
+                        <option value="HTML">HTML</option>
+                        <option value="C++">C++</option>
+                        <option value="C#">C#</option>
+                    </select>
+                </article>
+                <div class="enc">
+                    Choose Encryption
+                <br>
+                <div>
+                    <keygen name="security">
+                </div>
+                </div>
+                <div class="sub">
+                    <input type="submit" name="submit" value="submit">
+                    <input type="reset" name="reset" value="reset">
+                </div>
+                <div class="room">
+                    Select Room<br>
+                    <select>
+                        <option value="room1">Room 1</option>
+                        <option value="room1">Room 2</option>
+                        <option value="room1">Room 3</option>
+                        <option value="room1">Room 4</option>
+                    </select>
+                </div>
+                <div class="time">
+                    Select Time<br>
+                    <select>
+                        <option value="time">12:00 h</option>
+                        <option value="time">13:00 h</option>
+                        <option value="time">14:30 h</option>
+                        <option value="time">20:00 h</option>
+                    </select>
+                </div>
+                <div class="city">
+                    Choose City
+                    <br>
+                    <select multiple>
+                        <option value="city">Varna</option>
+                        <option value="city">Sofia</option>
+                        <option value="city">Bourgas</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
