@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Human Transform Table</title>
+    <meta charset="UTF-8">
+</head>
+<!-- Нещо с което да се занимавате -->
+<body>
+    <style>
+        div {
+            position: fixed;
+            top: 10px;
+            left: 500px;
+        }
+        
+        td.one {
+            background-color: lightsalmon;
+            width: 180px;
+            height: 180px;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            border-top-left-radius: 60%;
+            border-top-right-radius: 60%;
+            border-bottom-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+        }
+        
+        td.eyeRight {
+            position: fixed;
+            top: 70px;
+            left: 630px;
+            background-color: lightskyblue;
+            height: 20px;
+            width: 20px;
+            border-top-left-radius: 60%;
+            border-top-right-radius: 60%;
+            border-bottom-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+        }
+        
+        td.eyeLeft {
+            position: fixed;
+            top: 70px;
+            left: 530px;
+            background-color: lightskyblue;
+            height: 20px;
+            width: 20px;
+            border-top-left-radius: 60%;
+            border-top-right-radius: 60%;
+            border-bottom-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+        }
+        
+        td.middle {
+            position: fixed;
+            top: 140px;
+            left: 560px;
+            background-color: black;
+            height: 2px;
+            width: 60px;
+            border-top-left-radius: 60%;
+            border-top-right-radius: 60%;
+            border-bottom-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+        }
+        
+        td.earLeft {
+            position: fixed;
+            top: 70px;
+            left: 682px;
+            background-color: black;
+            height: 50px;
+            width: 20px;
+            border-top-left-radius: 100%;
+            border-top-right-radius: 1%;
+            border-bottom-left-radius: 1%;
+            border-bottom-right-radius: 100%;
+            z-index: -1;
+        }
+        
+        td.earRight {
+            position: fixed;
+            top: 70px;
+            left: 485px;
+            background-color: black;
+            height: 50px;
+            width: 20px;
+            border-top-left-radius: 1%;
+            border-top-right-radius: 100%;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 1%;
+            z-index: -1
+        }
+        
+        td.neck {
+            position: fixed;
+            top: 193px;
+            left: 570px;
+            background-color: lightsalmon;
+            height: 26px;
+            width: 33px;
+            border: 1px solid black;
+            border-top: none;
+            z-index: -1
+        }
+        
+        td.body {
+            position: fixed;
+            top: 220px;
+            left: 486px;
+            background-color: royalblue;
+            height: 250px;
+            width: 200px;
+            border-top-left-radius: 100%;
+            border-top-right-radius: 100%;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+            border: 1px solid black;
+        }
+        
+        td.dot {
+            position: fixed;
+            top: 260px;
+            left: 580px;
+            background-color: black;
+            height: 10px;
+            width: 10px;
+            border-top-left-radius: 60%;
+            border-top-right-radius: 60%;
+            border-bottom-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+        }
+        
+        td.dot1 {
+            position: fixed;
+            top: 300px;
+            left: 580px;
+            background-color: black;
+            height: 10px;
+            width: 10px;
+            border-top-left-radius: 60%;
+            border-top-right-radius: 60%;
+            border-bottom-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+        }
+        
+        td.dot2 {
+            position: fixed;
+            top: 340px;
+            left: 580px;
+            background-color: black;
+            height: 10px;
+            width: 10px;
+            border-top-left-radius: 60%;
+            border-top-right-radius: 60%;
+            border-bottom-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+        }
+        
+        td.dot3 {
+            position: fixed;
+            top: 380px;
+            left: 580px;
+            background-color: black;
+            height: 10px;
+            width: 10px;
+            border-top-left-radius: 60%;
+            border-top-right-radius: 60%;
+            border-bottom-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+        }
+        
+        td.dot4 {
+            position: fixed;
+            top: 420px;
+            left: 580px;
+            background-color: black;
+            height: 10px;
+            width: 10px;
+            border-top-left-radius: 60%;
+            border-top-right-radius: 60%;
+            border-bottom-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+        }
+        
+        td.leftArm {
+            position: fixed;
+            top: 275px;
+            left: 450px;
+            background-color: lightseagreen;
+            height: 150px;
+            width: 50px;
+            border-top-left-radius: 100%;
+            border-top-right-radius: 1%;
+            border-bottom-left-radius: 0%;
+            border-bottom-right-radius: 100%;
+            border: 1px solid black;
+            z-index: -1
+        }
+        
+        td.rightArm {
+            position: fixed;
+            top: 275px;
+            left: 673px;
+            background-color: lightseagreen;
+            height: 150px;
+            width: 50px;
+            border-top-left-radius: 1%;
+            border-top-right-radius: 100%;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 0%;
+            border: 1px solid black;
+            z-index: -1;
+        }
+        
+        td.rightLeg {
+            position: fixed;
+            top: 458px;
+            left: 600px;
+            background-color: lightsalmon;
+            height: 89px;
+            width: 33px;
+            border: 1px solid black;
+            z-index: -1;
+            border-bottom: none
+        }
+        
+        td.leftLeg {
+            position: fixed;
+            top: 440px;
+            left: 520px;
+            background-color: lightsalmon;
+            height: 107px;
+            width: 33px;
+            border: 1px solid black;
+            z-index: -1;
+            border-bottom: none
+        }
+        
+        td.leftfoot {
+            position: fixed;
+            top: 550px;
+            left: 600px;
+            background-color: lightsalmon;
+            height: 26px;
+            width: 33px;
+            border: 1px solid black;
+            border-top: none;
+            border-top-right-radius: 80%;
+        }
+        
+        td.rightfoot {
+            position: fixed;
+            top: 550px;
+            left: 520px;
+            background-color: lightsalmon;
+            height: 26px;
+            width: 33px;
+            border: 1px solid black;
+            border-top: none;
+            border-top-left-radius: 80%;
+        }
+    </style>
+    <div>
+        <table>
+            <tr>
+                <td class="one"></td>
+                <td class="eyeRight"></td>
+                <td class="eyeLeft"></td>
+                <td class="middle"></td>
+                <td class="earLeft"></td>
+                <td class="earRight"></td>
+                <td class="neck"></td>
+                <td class="body"></td>
+                <td class="leftArm"></td>
+                <td class="rightArm"></td>
+                <td class="leftLeg"></td>
+                <td class="rightLeg"></td>
+                <td class="leftfoot"></td>
+                <td class="rightfoot"></td>
+                <td class="dot"></td>
+                <td class="dot1"></td>
+                <td class="dot2"></td>
+                <td class="dot3"></td>
+                <td class="dot4"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
