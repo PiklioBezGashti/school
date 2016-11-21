@@ -1,0 +1,33 @@
+table{
+    width: 50%;
+    height: 200px;
+    border-spacing: 0px;
+    padding-left: 30px;
+}
+.main{
+    color: white;
+    background-color: rgba( 119, 231, 0, 0.9)
+}
+.colored{
+    background-color: rgba(204, 209, 209, 0.5)
+}
+td{
+   text-align: left;
+   border-right: 1px solid silver;
+   border-top: 0px;
+   border-bottom: 0px;
+   font-family: Arial, Helvetica, sans-serif
+}
+th{
+    text-align: left;
+    border-right: 1px solid silver; 
+    font-family: Arial, Helvetica, sans-serif 
+}
+input[type="checkbox"]{
+    text-align: left;
+    border-right: 0px
+}
+img{
+    width: 30px;
+    height: 20px;
+}

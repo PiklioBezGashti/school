@@ -1,0 +1,228 @@
+/* Using Table with Id and Class 
+
+table{
+    background-color: silver;
+}
+td.longer{
+    width: 350px;
+}
+td{
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+    width: 200px;
+    height: 10px;
+}
+td#ticket{
+    color: lightslategray;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+td.nosup{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif
+}
+td.time{
+color: lightslategray
+}
+td.status{
+    color: darkorange
+}
+*/
+
+/* Using :nth-child() see READMI.txt
+table{
+    background-color: silver;
+}
+tr:nth-child(1){
+    color: lightslategray;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+tr:nth-child(2){
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+    width: 350px;
+    height: 10px; 
+}
+tr:nth-child(3){
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+tr:nth-child(4){
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+    width: 350px;
+    height: 10px; 
+}
+tr:nth-child(5){
+     font-size: 18px;
+    font-family: monospace;
+    color: white;
+    width: 350px;
+    height: 10px;   
+}
+tr:nth-child(5) td:last-child{
+    font-size: 18px;
+    font-family: monospace;
+    color: lightslategray;
+    width: 350px;
+    height: 10px;
+}
+tr:nth-child(6){
+     font-size: 18px;
+    font-family: monospace;
+    color: white;
+    width: 350px;
+    height: 10px;   
+}
+tr:nth-child(6) td:last-child{
+    font-size: 18px;
+    font-family: monospace;
+    color: lightslategray;
+    width: 350px;
+    height: 10px;
+}
+tr:nth-child(7) td:last-child{
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+    width: 350px;
+    height: 10px;
+}
+tr:nth-child(8){
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+    width: 350px;
+    height: 10px;
+}
+tr:nth-child(8) td:last-child{
+    font-size: 18px;
+    font-family: monospace;
+    color: darkorange;
+    width: 350px;
+    height: 10px;
+}*/
+
+/* Using Id and Class in dl  
+
+html, body{
+    width: 100%
+}
+div.main{
+background-color: silver;
+width: 40%
+}
+dt { 
+  margin-bottom: 10px;
+}
+.right{
+    position: fixed;
+    top: 0;
+    left: 150px;
+    width: 350px;
+}
+.left{
+    width: 350px;
+}
+dt{
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+}
+.ticket{
+    color: lightslategray;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+dt.nosup{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif
+}
+dt.time{
+color: lightslategray
+}
+dt.status{
+    color: darkorange
+}
+*/
+
+/* dl wihout id,class
+html, body{
+    width: 100%
+}
+div:first-child {
+    background-color: silver;
+    display: block;
+    width: 40%;
+}
+div:nth-child(2){
+    position: fixed;
+    top: 0;
+    left: 150px;
+    width: 350px;
+}
+dt:nth-child(1){
+    color: lightslategray;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+dt:nth-child(2){
+    font-size: 18px;
+    font-family: monospace;
+    color: white; 
+}
+dt:nth-child(3){
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+dt:nth-child(4){
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+}
+dt:nth-child(5){
+     font-size: 18px;
+    font-family: monospace;
+    color: white;  
+}
+div:nth-child(2) dt:nth-child(5){
+    font-size: 18px;
+    font-family: monospace;
+    color: lightslategray;
+}
+dt:nth-child(6){
+     font-size: 18px;
+    font-family: monospace;
+    color: white;  
+}
+div:nth-child(2) dt:nth-child(6){
+    font-size: 18px;
+    font-family: monospace;
+    color: lightslategray;
+}
+dt:nth-child(8){
+     font-size: 18px;
+    font-family: monospace;
+    color: white;  
+}
+div:nth-child(2) dt:nth-child(7){
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+}
+div:nth-child(2) dt:nth-child(8){
+    font-size: 18px;
+    font-family: monospace;
+    color: darkorange;
+}
+*/
