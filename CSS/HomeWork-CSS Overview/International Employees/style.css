@@ -6,13 +6,26 @@ table{
 }
 .main{
     color: white;
-    background-color: rgba( 119, 231, 0, 0.9)
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#61c419+0,61c419+50,61c419+100 */
+background: #61c419; /* Old browsers */
+background: -moz-linear-gradient(45deg,  #61c419 0%, #61c419 50%, #61c419 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  #61c419 0%,#61c419 50%,#61c419 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  #61c419 0%,#61c419 50%,#61c419 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61c419', endColorstr='#61c419',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 .colored{
-    background-color: rgba(204, 209, 209, 0.5)
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+background: #eeeeee; /* Old browsers */
+background: -moz-linear-gradient(45deg,  #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  #eeeeee 0%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 td{
    text-align: left;
+   padding-left: 7px;
    border-right: 1px solid silver;
    border-top: 0px;
    border-bottom: 0px;
@@ -20,6 +33,7 @@ td{
 }
 th{
     text-align: left;
+    padding-left: 10px;     
     border-right: 1px solid silver; 
     font-family: Arial, Helvetica, sans-serif 
 }
@@ -30,4 +44,36 @@ input[type="checkbox"]{
 img{
     width: 30px;
     height: 20px;
+}
+tr:nth-child(1) td:nth-child(3){
+    background: url(germany2.jpg) no-repeat;
+    background-size: 25%;
+    background-position-x: 2px;
+    background-position-y: 5px;
+    text-align: center;
+    padding-left: 16px;
+}
+tr:nth-child(2) td:nth-child(3){
+    background: url(mexico2.jpg) no-repeat;
+    background-size: 25%;
+    background-position-x: 2px;
+    background-position-y: 5px;
+    text-align: center;
+}
+tr:nth-child(3) td:nth-child(3){
+    background: url(mexico2.jpg) no-repeat;
+    background-size: 25%;
+    background-position-x: 2px;
+    background-position-y: 5px;
+    text-align: center;
+}
+tr:nth-child(4) td:nth-child(3){
+    background: url(uk2.png) no-repeat;
+    background-size: 25%;
+    background-position-x: 2px;
+    background-position-y: 5px;
+    padding-left: 50px
+}
+th:last-child{
+    width: 130px
 }
