@@ -20,11 +20,11 @@ body{
     font-family: monospace
 }
 .rightside{
-float: right;
-display: block;
-width: 250px;
-height: 300px;
-font-family: monospace
+    float: right;
+    display: block;
+    width: 250px;
+    height: 300px;
+    font-family: monospace
 }
 .padding{
     padding-top: 40px
