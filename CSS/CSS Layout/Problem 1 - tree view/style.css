@@ -1,0 +1,19 @@
+li{
+    display: none;
+}
+ul{
+    width: 100px;
+    height: 2px;
+}
+span:hover{
+    text-decoration: underline;
+}
+ul:hover {
+    height: 85px
+}
+
+ul:hover > li{
+    display: block;
+    color: silver;
+    padding-left: 10px
+}

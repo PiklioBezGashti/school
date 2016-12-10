@@ -1,0 +1,77 @@
+.main{
+    background-color: silver;
+    width: 500px;
+    height: 700px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h4{
+    padding: 10px 0 10px 20px
+
+}
+.inner{
+    border: 1px solid dimgray;
+    height: 130px;
+    width: 400px;
+    margin: 20px;
+    display: inline-block;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif
+   
+
+}
+.image{
+    border: 1px solid silver;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    background: url(image.png) no-repeat;
+    float: left
+}
+.text{
+    width: 250px;
+    height: 50px;
+    margin: 10px 0 0 100px
+}
+
+.buttons{
+    clear: both;
+    width: 160px;
+    height: 30px;
+    float: right;
+    display: flex;
+    margin: -30px 10px 0px 0px;
+  }
+a{
+     border-top: 2px solid #E38382;
+     border-right: 2px solid #650000;
+     border-bottom: 2px solid #650000;
+     border-left: 2px solid #9C2829;
+     background: #f00;
+     box-shadow: inset 15px 0 0 #8A0000;
+     color: #fff;
+     text-decoration: none;
+     line-height: 1.5em;
+     visibility: visible;
+     height: 20px;
+     width: 120px;
+     text-align: center;
+     margin-right:10px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 
+}
+.smallbtn{
+     border-top: 2px solid #E38382;
+     border-right: 2px solid #650000;
+     border-bottom: 2px solid #650000;
+     border-left: 2px solid #9C2829;
+     background: #f00;
+     box-shadow: inset 15px 0 0 #8A0000;
+     color: #fff;
+     text-decoration: none;
+     line-height: 1.5em;
+     visibility: visible;
+     height: 20px;
+     width: 80px;
+     text-align: center;
+     margin-right:10px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
