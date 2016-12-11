@@ -12,9 +12,10 @@
 .test {
   background: url(images/animal-small2.jpg) no-repeat; }
 
-input {
-  visibility: hidden; }
-  input:checked + label {
+input, input + figure.img {
+  display: none;
+}
+  input:checked + figure.img {
     padding: 10%;
     position: fixed;
     top: 150px;
@@ -32,3 +33,7 @@ li {
     cursor: pointer;
     background-size: 110px 110px; }
 
+fieldset{
+  height: 100px;
+  width: 500px;
+}
